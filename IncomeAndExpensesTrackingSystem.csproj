@@ -165,6 +165,10 @@
     <Content Include="Assets\icons8-money-96 %281%29.png" />
     <Content Include="Assets\icons8-savings-ios-17-filled-96.png" />
     <Content Include="Assets\icons8-split-money-32.png" />
+    <Content Include="Previews\AddExpense.png" />
+    <Content Include="Previews\AddIncome.png" />
+    <Content Include="Previews\Dashboard.png" />
+    <Content Include="Previews\Login.png" />
     <None Include="Resources\icons8-money-96 %283%29.png" />
     <None Include="Resources\icons8-card-wallet-96.png" />
     <None Include="Resources\icons8-money-96 %281%29.png" />

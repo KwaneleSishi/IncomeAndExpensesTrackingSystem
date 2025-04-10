@@ -25,6 +25,17 @@ namespace IncomeAndExpensesTrackingSystem
             displayIncomeDataList();
         }
 
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+
+            displayCategoryList();
+            displayIncomeDataList();
+        }
         public void displayIncomeDataList()
         {
             IncomeData iData = new IncomeData();

@@ -23,6 +23,18 @@ namespace IncomeAndExpensesTrackingSystem
             displayExpenseDataList();
         }
 
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+
+            displayCategoryList();
+            displayExpenseDataList();
+        }
+
         public void displayExpenseDataList()
         {
             ExpensesData eData = new ExpensesData();

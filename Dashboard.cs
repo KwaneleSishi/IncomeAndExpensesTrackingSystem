@@ -34,6 +34,30 @@ namespace IncomeAndExpensesTrackingSystem
             loadTotalExpenses();
         }
 
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+
+            incomeTodayIncome();
+            incomeYesterdayIncome();
+            incomeThisMonth();
+            incomeThisYear();
+
+            loadTotalIncome();
+
+            expenseTodayExpense();
+            expenseYesterdayExpense();
+            expenseThisMonth();
+            expenseThisYear();
+
+            loadTotalExpenses();
+
+        }
+
         //Income 
         public void incomeTodayIncome()
         {
@@ -328,6 +352,11 @@ namespace IncomeAndExpensesTrackingSystem
 
 
         private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void income_totalIncome_Click(object sender, EventArgs e)
         {
 
         }
